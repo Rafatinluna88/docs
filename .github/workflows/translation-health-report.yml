@@ -101,7 +101,7 @@ jobs:
           creds: ${{ secrets.PROD_AZURE_CREDENTIALS }}
 
       - name: Upload to Azure blob storage
-        uses: azure/CLI@61bb69d64d613b52663984bf12d6bac8fd7b3cc8
+        uses: azure/CLI@bb2303375cd17e0282386cca327ba3a341272050
         with:
           inlineScript: |
             az storage blob upload \
